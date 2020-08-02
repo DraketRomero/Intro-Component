@@ -1,0 +1,283 @@
+:root
+{
+    --font-color: white;
+    --font-face: 'Poppins', sans-serif;
+}
+
+body
+{
+    max-width: 1440px;
+    background-image: url(images/bg-intro-desktop.png);
+    background-color: lightcoral;    
+}
+
+.main-items
+{
+    display: flex;
+}
+
+.texto
+{
+    width: 520px;
+    padding-top: 300px;
+    padding-left: 160px;
+    font-family: var(--font-face);
+    color: var(--font-color);
+}
+
+.title
+{
+    font-size: 45px;
+    line-height: 55px;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+
+/* .paragraph
+{
+
+} */
+
+.data
+{
+    padding-top: 120px;
+    padding-left: 80px;
+}
+
+.btn-container
+{
+    padding-bottom: 30px;
+    width: 550px;
+}
+
+.btn-offer
+{
+    background: hsl(248, 32%, 49%);
+    border: 0;
+    border-radius: 8px;
+    height: 55px;
+    width: 100%;
+    color: var(--font-color);
+    font-family: var(--font-face);
+    font-weight: bolder;
+    box-shadow: 0 10px 0px 0px rgba(0, 0, 0, .15);
+}
+
+.form
+{
+    width: 470px;
+    background: var(--font-color);
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.form-data
+{
+    width: 460px;
+}
+
+.input
+{
+    width: 425px;
+    height: 45px;
+    margin-bottom: 17px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    padding-left: 30px;
+}
+
+.input:hover
+{
+    border: 1px solid hsl(248, 32%, 49%);
+}
+
+.input:focus
+{
+   border: 1px solid hsl(248, 32%, 49%);
+   outline: none !important; /*Quita el borde del input*/
+}
+
+.input::placeholder
+{
+    font-weight: bolder;
+}
+
+.btn-form
+{
+    width: 100%;
+    height: 42px;
+    background: hsl(154, 59%, 51%);
+    border: 0;
+    border-radius: 5px;
+    color: var(--font-color);
+    font-family: var(--font-face);
+    font-weight: bolder;
+    text-transform: uppercase;
+    box-shadow: 0 4px 0px 0px rgba(48, 171, 117, 15);
+}
+
+.txt-foot
+{
+    font-size: 11px;
+    padding-top: 18px;
+    text-align: center;
+    color: rgb(189, 182, 182);
+    font-weight: bold;
+    font-family: var(--font-face);
+    margin-bottom: 10px;
+}
+
+.txt-foot span
+{
+    color: hsl(0, 100%, 74%);
+}
+
+.warning
+{
+    background-image: url(images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: 410px 10px;
+    border-color: red;
+    margin-bottom: 0;
+}
+
+.warning::placeholder
+{
+    color: red;
+    border-color: lightgray;
+}
+
+.txt
+{
+    color: red;
+    font-family: var(--font-face);
+    font-size: 11px;
+    padding-left: 300px;
+    font-style: italic;
+    padding-bottom: 8px;       
+}
+
+.hidden
+{
+    display: none;
+}
+
+
+.attribution 
+{ 
+    font-size: 11px; 
+    text-align: center; 
+    color: white;
+    font-weight: bolder;
+    padding-top: 30px;
+}
+
+.attribution a 
+{ 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}
+
+@media screen and (max-width: 375px)
+{
+    body
+    {
+        max-width: 375px;
+    }
+
+    .main-items
+    {
+       display: block;
+    }
+
+    .texto
+    {
+        padding: 0;
+        padding-top: 90px;
+    }
+
+    .title
+    {
+        width: 250px;
+        padding-left: 60px;
+        padding-right: 60px;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .paragraph
+    {
+        width: 320px;
+        text-align: center;
+        padding-left: 20px;
+    }
+
+    .data
+    {
+        width: 330px;
+        padding-left: 20px;
+        padding-top: 70px;
+    }
+
+    .btn-container
+    {
+        width: 320px;
+    }
+
+    .btn-offer
+    {
+        width: 320px;
+        padding: 20px 80px 20px 80px;
+        justify-content: center;
+        height: 80px;
+    }
+
+    .btn-offer span
+    {
+        font-weight: lighter;
+    }
+
+    .form
+    {
+        width: 320px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .form-data
+    {
+        width: 280px;
+        padding-top: 25px;
+        padding-left: 25px;
+        margin: 0;
+    }
+
+    .input
+    {
+        width: 240px;
+        height: 50px;
+    }
+
+    .btn-form
+    {
+        height: 50px;
+        width: 275px;
+    }
+
+    .txt-foot
+    {
+        width: 250px;
+        padding-bottom: 30px;
+        padding-left: 15px;
+    }
+
+    .txt
+    {
+        padding: 0;
+    }
+
+    .hidden
+    {
+        display: none;
+    }
+}

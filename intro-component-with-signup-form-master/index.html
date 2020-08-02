@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=no"> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="main-items">
+    <div class="texto">
+      <div class="title">
+        Learn to code by watching others
+      </div>
+      <div class="paragraph">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable. 
+      </div>
+    </div>
+
+    <div class="data">
+      <div class="btn-container">
+        <button class="btn-offer">          
+          Try it free 7 days <span>then $20/mo. thereafter</span>
+        </button>
+      </div>
+
+      <div class="form">
+        <div class="form-data">
+          <input type="text" class="input" id="name" placeholder="First Name">
+          <p class="txt hidden" id ="para1">
+            First Name cannot be empty
+          </p>         
+          <input type="text" class="input" id="lName" placeholder="Last Name">
+          <p class="txt hidden" id ="para2">
+            Last Name cannot be empty
+          </p>  
+          <input type="email" class="input" id="mail" placeholder="Email Address">
+          <p class="txt hidden" id ="para3">
+            Looks like this is not an email
+          </p>  
+          <input type="password" class="input" id="pass" placeholder="Password">
+          <p class="txt hidden" id ="para4">
+            Password cannot be empty
+          </p>  
+          <button class="btn-form"id="form-btn">
+            Claim your free trial
+          </button>
+  
+          <div class="txt-foot">            
+            By clicking the button, you are agreeing to our <span>Terms and Services</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.linkedin.com/in/reyes-diego-garrido-romero-4b9654138">Diego Romero</a>.
+    </p>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>
